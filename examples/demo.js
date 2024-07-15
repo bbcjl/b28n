@@ -1,4 +1,4 @@
-import * as b28n from "./b28n.js";
+import * as b28n from "../b28n/b28n.js";
 
 var translator = new b28n.B28n();
 
