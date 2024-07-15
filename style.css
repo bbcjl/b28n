@@ -1,0 +1,94 @@
+@import url("fonts.css");
+
+* {
+    font-family: "ReithSans", "BBC Reith Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+*:focus-visible {
+    outline: 0.1rem solid #0171f1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+nav, section, footer {
+    padding: 0.5rem;
+    padding-inline: 5%;
+}
+
+footer {
+    background-color: #eeeeee;
+}
+
+nav {
+    border-bottom: 1px solid #eeeeee;
+}
+
+nav a img {
+    height: 2rem;
+}
+
+section > p {
+    margin-block: 0.5rem;
+}
+
+button {
+    padding: 0.5rem;
+    padding-inline: 1rem;
+    background-color: #0171f1;
+    color: white;
+    border: none;
+}
+
+button:focus-visible {
+    outline: 0.1rem solid black;
+}
+
+input, textarea {
+    flex-grow: 1;
+    padding: 0.5rem;
+    background-color: #eeeeee;
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.translator {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.translator > div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.translator > div > div {
+    height: 100%;
+    background-color: #eeeeee;
+}
+
+.editor, .result {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    height: 100%;
+    min-height: 10rem;
+}
+
+.editor:empty::after {
+    content: "Enter text to translate";
+    color: #aaaaaa;
+}

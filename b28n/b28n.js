@@ -24,13 +24,13 @@ export class B28n {
     }
 
     async loadLookup(path = "data/trained/en-GB.json") {
-        if (Deno) {
+        if (globalThis.Deno) {
             this.decoderLookup = JSON.parse(await Deno.readTextFile(path));
 
             return;
         }
 
-        var response = fetch(path);
+        var response = await fetch(path);
 
         this.decoderLookup = await response.json();
     }
