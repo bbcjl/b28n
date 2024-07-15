@@ -1,7 +1,7 @@
 @import url("fonts.css");
 
 * {
-    font-family: "ReithSans", "BBC Reith Sans", sans-serif;
+    font-family: "ReithSans", "BBC Reith Sans", system-ui, sans-serif;
     box-sizing: border-box;
 }
 
@@ -91,4 +91,10 @@ textarea {
 .editor:empty::after {
     content: "Enter text to translate";
     color: #aaaaaa;
+}
+
+@media (max-width: 800px) {
+    .translator {
+        flex-direction: column;
+    }
 }
