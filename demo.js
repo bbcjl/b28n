@@ -4,5 +4,5 @@ var translator = new b28n.B28n();
 
 await translator.loadLookup();
 
-console.log(translator.encode("A library to encode words as numeronyms, because why not"));
-console.log(translator.decode("T2s is a t2t of t1e c2e t2t c1n do t1e t3g — so p4y c2l, r3t? Or is it p4y c2l?"));
+console.log(translator.encode("This is a demonstration of using the B28n library."));
+console.log(translator.decodeAllAlternatives("T2s is a d11n of u3g t1e B28n l5y."));
